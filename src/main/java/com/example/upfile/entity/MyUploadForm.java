@@ -1,0 +1,31 @@
+package com.example.upfile.entity;
+
+import org.springframework.web.multipart.MultipartFile;
+
+/**
+ * Nam on 10/11/2018
+ */
+public class MyUploadForm {
+
+    private String description;
+
+    // Upload files.
+    private MultipartFile[] fileDatas;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public MultipartFile[] getFileDatas() {
+        return fileDatas;
+    }
+
+    public void setFileDatas(MultipartFile[] fileDatas) {
+        this.fileDatas = fileDatas;
+    }
+
+}
